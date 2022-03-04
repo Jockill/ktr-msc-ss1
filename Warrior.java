@@ -9,6 +9,26 @@ class Warrior extends Character
 		say("I'll crush you with my " + weapon + "!");
 	}
 
+	public void moveRight()
+	{
+		say("moves right like a bad boy");
+	}
+
+	public void moveLeft()
+	{
+		say("moves left like a bad boy");
+	}
+
+	public void moveForward()
+	{
+		say("moves forward like a bad boy");
+	}
+
+	public void moveBack()
+	{
+		say("moves back like a bad boy");
+	}
+
 	Warrior(String name, String RPGClass)
 	{
 		super(name, RPGClass);

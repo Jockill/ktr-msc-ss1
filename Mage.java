@@ -9,6 +9,26 @@ class Mage extends Character
 		say("Feel the power of my " + weapon + "!");
 	}
 
+	public void moveRight()
+	{
+		say("moves right furtively");
+	}
+
+	public void moveLeft()
+	{
+		say("moves left furtively");
+	}
+
+	public void moveForward()
+	{
+		say("moves forward furtively");
+	}
+
+	public void moveBack()
+	{
+		say("moves back furtively");
+	}
+
 	Mage(String name, String RPGClass)
 	{
 		super(name, RPGClass);
