@@ -16,9 +16,14 @@ public abstract class Character
 	public int getWit() { return this.wit; }
 
 	// Methods
+	public void say(String sentence)
+	{
+		System.out.println("[" + this.name + "]: " + sentence);
+	}
+
 	public void attack(String weapon)
 	{
-		System.out.println("[" + this.name + "]: Rrrrrrrrr...");
+		say("Rrrrrrrrr...");
 	}
 
 	// Constructor

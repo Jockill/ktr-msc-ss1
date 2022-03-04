@@ -4,8 +4,8 @@ class Warrior extends Character{
 		if (!(weapon == "hammer" || weapon == "sword"))
 			return;
 
-		System.out.println("[" + this.name + "]: Rrrrrrrrr...");
-		System.out.println("[" + this.name + "]: I'll crush you with my " + weapon + "!");
+		say("Rrrrrrrrr...");
+		say("I'll crush you with my " + weapon + "!");
 	}
 
 	Warrior(String name, String RPGClass)
@@ -16,6 +16,6 @@ class Warrior extends Character{
 			this.strength = 8;
 			this.wit = 3;
 
-			System.out.println("[" + this.name + "]: My name will go down in history!");
+			say("My name will go down in history!");
 	}
 }

@@ -4,8 +4,8 @@ class Mage extends Character{
 		if (!(weapon == "magic" || weapon == "wand"))
 			return;
 
-		System.out.println("[" + this.name + "]: Rrrrrrrrr...");
-		System.out.println("[" + this.name + "]: Feel the power of my " + weapon + "!");
+		say("Rrrrrrrrr...");
+		say("Feel the power of my " + weapon + "!");
 	}
 
 	Mage(String name, String RPGClass)
@@ -16,6 +16,6 @@ class Mage extends Character{
 			this.strength = 10;
 			this.wit = 10;
 
-			System.out.println("[" + this.name + "]: May the gods be with me.");
+			say("May the gods be with me.");
 	}
 }
