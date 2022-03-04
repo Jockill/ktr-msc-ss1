@@ -21,33 +21,18 @@ public abstract class Character implements Movable
 		System.out.println("[" + this.name + "]: " + sentence);
 	}
 
-	public void attack(String weapon)
-	{
-		say("Rrrrrrrrr...");
-	}
+	public void attack(String weapon) { say("Rrrrrrrrr..."); }
 
-	public void moveRight()
-	{
-		say("moves right");
-	}
+	public void unsheathe() { say("unsheathe his weapon."); }
 
-	public void moveLeft()
-	{
-		say("moves left");
-	}
-
+	//> Movements
 	/* J'ai pris l'initiative de modifier les print de moveForward() et moveBack()
- 	 * car ils me semblaient inversés dans le sujet.
-	 */
-	public void moveForward()
-	{
-		say("moves forward");
-	}
-
-	public void moveBack()
-	{
-		say("moves back");
-	}
+	* car ils me semblaient inversés dans le sujet.
+	*/
+	public void moveRight() {	say("moves right"); }
+	public void moveLeft() {	say("moves left"); }
+	public void moveForward() {	say("moves forward"); }
+	public void moveBack() {	say("moves back"); }
 
 	// Constructor
 	Character(String name, String RPGClass)
