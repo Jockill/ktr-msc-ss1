@@ -1,9 +1,11 @@
 class Warrior extends Character
 {
-	public void attack(String weapon)
+	public void attack(String weapon) throws WeaponException
 	{
+		if (weapon == "")
+			throw new WeaponException(formatSay("I refuse to fight with my bare hands."));
 		if (!(weapon == "hammer" || weapon == "sword"))
-			return;
+			throw new WeaponException(formatSay("A " + weapon + "?? What should I do with this?!"));
 
 		say("Rrrrrrrrr...");
 		say("I'll crush you with my " + weapon + "!");

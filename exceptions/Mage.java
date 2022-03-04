@@ -1,9 +1,12 @@
 class Mage extends Character
 {
-	public void attack(String weapon)
+	public void attack(String weapon) throws WeaponException
 	{
+		// Exceptions handling
+		if (weapon == "")
+			throw new WeaponException(formatSay("I refuse to fight with my bare hands."));
 		if (!(weapon == "magic" || weapon == "wand"))
-			return;
+			throw new WeaponException(formatSay("I don't need this stupid " + weapon + "! Don't misjudge my powers!"));
 
 		say("Rrrrrrrrr...");
 		say("Feel the power of my " + weapon + "!");
