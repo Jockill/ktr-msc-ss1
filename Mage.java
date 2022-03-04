@@ -1,4 +1,5 @@
-class Mage extends Character{
+class Mage extends Character
+{
 	public void attack(String weapon)
 	{
 		if (!(weapon == "magic" || weapon == "wand"))

@@ -1,4 +1,4 @@
-public abstract class Character
+public abstract class Character implements Movable
 {
 	protected String name;
 	protected final String RPGClass;
@@ -24,6 +24,29 @@ public abstract class Character
 	public void attack(String weapon)
 	{
 		say("Rrrrrrrrr...");
+	}
+
+	public void moveRight()
+	{
+		say("moves right");
+	}
+
+	public void moveLeft()
+	{
+		say("moves left");
+	}
+
+	/* J'ai pris l'initiative de modifier les print de moveForward() et moveBack()
+ 	 * car ils me semblaient inversés dans le sujet.
+	 */
+	public void moveForward()
+	{
+		say("moves forward");
+	}
+
+	public void moveBack()
+	{
+		say("moves back");
 	}
 
 	// Constructor

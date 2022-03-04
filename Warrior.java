@@ -1,4 +1,5 @@
-class Warrior extends Character{
+class Warrior extends Character
+{
 	public void attack(String weapon)
 	{
 		if (!(weapon == "hammer" || weapon == "sword"))
